@@ -1,62 +1,53 @@
-<h2 class="c-project-heading--task">Add more questions</h2>
+<h2 class="c-project-heading--task">Choose your colours</h2>
 
 --- task ---
-From the tab above the workspace, select **index.html**.
+Change the quiz colour theme in `default.css` so the page and result box match your chosen style.
 --- /task ---
 
 --- task ---
-Copy and paste the question container two times, and edit them so your quiz has three questions that use unique names, ids, and result boxes:
+From the file menu, select **default.css**.
 --- /task ---
+
+--- task ---
+Update the colour variables to choose a new look for your quiz.
+You can use [this tool to choose colours](https://www.google.com/search?q=colour+picker)!
+
+--- /task ---
+
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: html
-filename: index.html
+language: css
+filename: default.css
 line_numbers: true
-line_number_start: 32
-line_highlights: 32-60
+line_number_start: 1
+line_highlights: 6-12
 ---
-      <div class="q-container">
-        <h1>Question 2</h1> <!-- Update the number for the second question. -->
-        <h2>Which bird is known for its ability to copy human speech?</h2> <!-- Write a new question here. -->
-
-        <input type="radio" name="q2" value="" id="q2a1">
-        <label for="q2a1">Sparrow</label><br>
-        <input type="radio" name="q2" value="" id="q2a2">
-        <label for="q2a2">Pigeon</label><br>
-        <input type="radio" name="q2" value="correct" id="q2a3">
-        <label for="q2a3">Parrot</label><br> <!-- Give the correct answer value="correct". -->
-
-        <div class="result" id="result2"></div> <!-- Match the result box to question 2. -->
-        <button id="q2" onclick="checkAnswer('q2', '#result2')">Check Answer</button> <!-- Pass q2 into the function. -->
-      </div>
-
-      <div class="q-container">
-        <h1>Question 3</h1> <!-- Repeat the same pattern for question 3. -->
-        <h2>Which animal is known for its distinctive black and white stripes?</h2>
-
-        <input type="radio" name="q3" value="" id="q3a1">
-        <label for="q3a1">Hippopotamus</label><br>
-        <input type="radio" name="q3" value="" id="q3a2">
-        <label for="q3a2">Giraffe</label><br>
-        <input type="radio" name="q3" value="correct" id="q3a3">
-        <label for="q3a3">Zebra</label><br>
-
-        <div class="result" id="result3"></div> <!-- Use a new result id for the third question. -->
-        <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button> <!-- Pass q3 into the function. -->
-      </div>
+:root {
+  /* Font variable */
+  --font: 16px/1.25 'Raleway', sans-serif;
+  
+  /* Base Colours */
+  --body-background: #FFFF00; /* Set the page background colour. */
+  --background: #33B5E5; /* Set the colour of the header and question cards. */
+  --header-font-colour: #ffffff; /* Set the text colour used in the header and result box. */
+  --h1-colour: #001e4d; /* Set the dark highlight colour for headings and the result box background. */
+  --h2-colour: #001e4d; /* Set the question text colour. */
+  --button-background-colour: #ffffff; /* Set the button background colour. */
+  --button-font-colour: #001e4d; /* Set the button text colour. */
+}
 --- /code ---
 
 </div>
 
 <div class="c-project-output">
-  <p>The page now shows three separate question cards, each with its own answers, result box, and Check Answer button.</p>
+  <p>Your quiz changes to the bright yellow and blue theme used in the complete example, and the result box text is easy to read.</p>
 </div>
 
 --- task ---
 **Test:** Click **Run**.
 
-You should see three question cards on the page, and each card should have its own **Check Answer** button.
+You should see the page colours update, and the text inside the result box should show clearly when you check an answer.
 --- /task ---

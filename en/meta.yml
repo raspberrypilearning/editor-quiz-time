@@ -10,6 +10,7 @@ steps:
   - title: You will make
   - title: Create your first question
   - title: Check the answer
+  - title: Choose your colours
   - title: Add more questions
     completion:
       - engaged

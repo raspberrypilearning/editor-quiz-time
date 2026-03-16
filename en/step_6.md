@@ -1,59 +1,37 @@
-<h2 class="c-project-heading--task">Keep score</h2>
+<h2 class="c-project-heading--task">Add a score</h2>
 
 --- task ---
-Update `scripts.js` so correct answers add points and answered buttons can only be used once.
+Add a score display to the page header so the quiz can show the player's points.
 --- /task ---
 
 --- task ---
-From the tab above the workspace, select **scripts.js**.
+From the file menu, select **index.html**.
 --- /task ---
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: javascript
-filename: scripts.js
+language: html
+filename: index.html
 line_numbers: true
-line_number_start: 1
-line_highlights: 2, 5, 15, 18-19
+line_number_start: 11
+line_highlights: 13
 ---
-// Variables
-var score = 0; // Store the player's score.
-
-// Constants
-const scoreText = document.querySelector("#scoreText"); // Find the score display in the header.
-
-// Check answer function
-function checkAnswer(question, result) {
-  let answer = document.querySelector(`input[name="${question}"]:checked`);
-  let qResult = document.querySelector(result);
-
-  qResult.style.display = "block";
-
-  if (answer) {
-    document.querySelector("#" + question).disabled = true; // Stop the same button from scoring twice.
-    if (answer.value === "correct") {
-      qResult.innerText = "Correct";
-      score += 1; // Add one point for a correct answer.
-      scoreText.innerText = `Score: ${score}`; // Show the new score in the header.
-    } else {
-      qResult.innerText = "Incorrect";
-    }
-  } else {
-    qResult.innerText = "Please select an answer";
-  }
-}
+    <header class="header">
+      <span class="sitename">Wildlife quiz</span>
+      <span id="scoreText" class="sitename">Score: 0</span> <!-- Start the score display at zero. -->
+    </header>
 --- /code ---
 
 </div>
 
 <div class="c-project-output">
-  <p>After a correct answer, the score increases by one and the same Check Answer button cannot be used again.</p>
+  <p>The header now shows Score: 0 next to your quiz title.</p>
 </div>
 
 --- task ---
-**Test:** Click **Run**, answer a question correctly, and press **Check Answer**.
+**Test:** Click **Run**.
 
-Your score should increase by one, and clicking the same button again should not add more points.
+You should see **Score: 0** in the header next to your quiz title.
 --- /task ---

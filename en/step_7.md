@@ -1,47 +1,11 @@
-<h2 class="c-project-heading--task">Show one question at a time</h2>
+<h2 class="c-project-heading--task">Keep score</h2>
 
 --- task ---
-Hide every question card by default, then use JavaScript to show only the first one when the page loads. You will need to edit both files so the CSS **hides** all question cards, and the JavaScript **brings back** the first one.
-
+Update `scripts.js` so correct answers add points and answered buttons can only be used once.
 --- /task ---
 
 --- task ---
-From the file menu, select **style.css**.
-Add the following lines to hide all the question cards:
---- /task ---
-
-<div class="c-project-code">
-
---- code ---
----
-language: css
-filename: style.css
-line_numbers: true
-line_number_start: 34
-line_highlights: 41-42
----
-.q-container {
-  background-color: var(--background);
-  width: 90%;
-  max-width: 600px;
-  margin: 100px auto 0;
-  border-radius: 10px;
-  padding: 30px;
-  display: none; /* Hide every question until JavaScript shows one. */
-  opacity: 0; /* Start hidden so animations can fade questions in. */
-}
---- /code ---
-
-</div>
-
---- task ---
-From the tab above the workspace, select **scripts.js** so you can update the JavaScript next.
---- /task ---
-
---- task ---
-
-Add the following code to show the first card:
-
+From the tab above the workspace, select **scripts.js**.
 --- /task ---
 
 <div class="c-project-code">
@@ -51,12 +15,14 @@ Add the following code to show the first card:
 language: javascript
 filename: scripts.js
 line_numbers: true
-line_number_start: 5
-line_highlights: 7, 31-32
+line_number_start: 1
+line_highlights: 2, 5, 15, 18-19
 ---
+// Variables
+var score = 0; // Store the player's score.
+
 // Constants
-const scoreText = document.querySelector("#scoreText");
-const questions = document.querySelectorAll(".q-container"); // Collect all of the question cards.
+const scoreText = document.querySelector("#scoreText"); // Find the score display in the header.
 
 // Check answer function
 function checkAnswer(question, result) {
@@ -66,11 +32,11 @@ function checkAnswer(question, result) {
   qResult.style.display = "block";
 
   if (answer) {
-    document.querySelector("#" + question).disabled = true;
+    document.querySelector("#" + question).disabled = true; // Stop the same button from scoring twice.
     if (answer.value === "correct") {
       qResult.innerText = "Correct";
-      score += 1;
-      scoreText.innerText = `Score: ${score}`;
+      score += 1; // Add one point for a correct answer.
+      scoreText.innerText = `Score: ${score}`; // Show the new score in the header.
     } else {
       qResult.innerText = "Incorrect";
     }
@@ -78,20 +44,16 @@ function checkAnswer(question, result) {
     qResult.innerText = "Please select an answer";
   }
 }
-
-// Display first question
-questions[0].style.display = "block"; // Show the first card as soon as the page loads.
-questions[0].style.opacity = 1; // Make sure the first card is fully visible.
 --- /code ---
 
 </div>
 
 <div class="c-project-output">
-  <p>Only the first question card is visible when the page loads.</p>
+  <p>After a correct answer, the score increases by one and the same Check Answer button cannot be used again.</p>
 </div>
 
 --- task ---
-**Test:** Click **Run**.
+**Test:** Click **Run**, answer a question correctly, and press **Check Answer**.
 
-Only the first question should be visible when the page opens.
+Your score should increase by one, and clicking the same button again should not add more points.
 --- /task ---
