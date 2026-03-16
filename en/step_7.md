@@ -1,14 +1,11 @@
 <h2 class="c-project-heading--task">Show one question at a time</h2>
 
 --- task ---
-Hide every question card by default, then use JavaScript to show only the first one when the page loads.
+Hide every question card by default, then use JavaScript to show only the first one when the page loads. You will need to edit both files so the CSS **hides** all question cards, and the JavaScript **brings back** the first one.
+
 --- /task ---
 
---- task ---
-From the file menu, select **style.css** and **scripts.js**.
---- /task ---
 
-Update both files for the same micro-goal: the CSS hides all question cards, and the JavaScript brings back the first one.
 
 --- task ---
 From the file menu, select **style.css**.
