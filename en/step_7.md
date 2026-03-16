@@ -7,6 +7,7 @@ Hide every question card by default, then use JavaScript to show only the first 
 
 --- task ---
 From the file menu, select **style.css**.
+Add the following lines to hide all the question cards:
 --- /task ---
 
 <div class="c-project-code">
@@ -35,6 +36,12 @@ line_highlights: 41-42
 
 --- task ---
 From the tab above the workspace, select **scripts.js** so you can update the JavaScript next.
+--- /task ---
+
+--- task ---
+
+Add the following code to show the first card:
+
 --- /task ---
 
 <div class="c-project-code">
