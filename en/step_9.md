@@ -5,14 +5,16 @@ Add a full-marks message and a retry link, then update the last question so the 
 --- /task ---
 
 --- task ---
-From the file menu, select **index.html** and **scripts.js**.
+From the file menu, select **index.html**.
 --- /task ---
 
-Update both files for the same micro-goal: hidden HTML elements are added first, then JavaScript reveals the correct ending.
+--- task ---
+
+Add a special message if the player scores full marks:
+
+--- /task ---
 
 <div class="c-project-code">
-
-**Code snippet 1: Add the hidden ending elements to `index.html`.**
 
 --- code ---
 ---
@@ -32,7 +34,20 @@ line_highlights: 65-66
       </div>
 --- /code ---
 
-**Code snippet 2: Update `scripts.js` to show the final score and ending message.**
+</div>
+
+
+--- task ---
+From the file menu, select **scripts.js**.
+--- /task ---
+
+--- task ---
+
+Show the player their final score and let the player try again:
+
+--- /task ---
+
+<div class="c-project-code">
 
 --- code ---
 ---

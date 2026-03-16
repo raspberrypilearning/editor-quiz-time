@@ -8,6 +8,12 @@ Track which question is active and move to the next card after each checked answ
 From the file menu, select **scripts.js**.
 --- /task ---
 
+--- task ---
+
+Add the `NextQ` function to move to the next question when the user answers:
+
+--- /task ---
+
 <div class="c-project-code">
 
 --- code ---
