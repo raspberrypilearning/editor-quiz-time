@@ -10,7 +10,7 @@ From the file menu, select **default.css**.
 
 --- task ---
 Update the colour variables to choose a new look for your quiz.
-You can use [this tool to choose colours](https://www.google.com/search?q=colour+picker)!
+You can use [this tool to choose colours](https://www.google.com/search?q=colour+picker){:target="_blank"}!
 
 --- /task ---
 
