@@ -43,7 +43,7 @@ line_highlights: 6-12
 </div>
 
 <div class="c-project-output">
-  <p>Your quiz changes to the bright yellow and blue theme used in the complete example, and the result box text is easy to read.</p>
+  <p>Your quiz changes to the colours you choose, and the result box text is easy to read.</p>
 </div>
 
 --- task ---
