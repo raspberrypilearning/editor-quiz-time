@@ -1,0 +1,4 @@
+name: 'Animals quiz'
+identifier: 'editor-quiz-time-complete'
+type: 'html'
+build: true

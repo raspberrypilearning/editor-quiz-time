@@ -1,14 +1,26 @@
-title: Project title in sentence case
+---
+title: Quiz time!
 hero_image: images/banner.png
-description: A short description of the project
-listed: false
-pdf: false
+description: Create an interactive quiz app!
+version: 4
+listed: true
+copyedit: false
+last_tested: '2021-03-26'
 steps:
-  - title: What you will make
-  - title: Step title
+  - title: You will make
+  - title: Create your first question
+  - title: Check the answer
+  - title: Add more questions
     completion:
-      - engaged      
-  - title: Challenge
-    challenge: true
+      - engaged
+  - title: Add a score
+  - title: Keep score
+  - title: Show one question at a time
+  - title: Show the next question
+    completion:
+      - internal
+  - title: Finish the quiz
     completion:
       - external
+  - title: Challenge
+    challenge: true

@@ -1,0 +1,4 @@
+name: 'Quiz starter'
+identifier: 'editor-quiz-time-starter'
+type: 'html'
+build: true
