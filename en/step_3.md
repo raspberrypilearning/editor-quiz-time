@@ -24,7 +24,7 @@ language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 7
-line_highlights: 8-20
+line_highlights: 8-23
 ---
 // Check answer function
 function checkAnswer(question, result) {

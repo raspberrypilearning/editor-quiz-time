@@ -22,7 +22,7 @@ language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 1
-line_highlights: 3,22,25,33-43
+line_highlights: 3,22,25,36-47
 ---
 // Variables
 var score = 0;
@@ -55,6 +55,10 @@ function checkAnswer(question, result) {
   }
 }
 
+// Display first question
+questions[0].style.display = "block";
+questions[0].style.opacity = 1;
+
 // Next question function
 function nextQ() {
   questions[currentQ].classList.add("fade-out"); // Animate the current card out.
@@ -67,10 +71,6 @@ function nextQ() {
     }
   }, "2000");
 }
-
-// Display first question
-questions[0].style.display = "block";
-questions[0].style.opacity = 1;
 --- /code ---
 
 </div>

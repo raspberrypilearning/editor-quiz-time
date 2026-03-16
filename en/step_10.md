@@ -55,7 +55,7 @@ language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 5
-line_highlights: 8-9,44-50
+line_highlights: 8-9,44-50,56-57
 ---
 // Constants
 const scoreText = document.querySelector("#scoreText");
@@ -106,6 +106,10 @@ function nextQ() {
     }
   }, "2000");
 }
+
+// Display first question
+questions[0].style.display = "block";
+questions[0].style.opacity = 1;
 --- /code ---
 
 </div>
