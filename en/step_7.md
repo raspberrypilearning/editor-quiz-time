@@ -11,8 +11,6 @@ From the file menu, select **style.css**.
 
 <div class="c-project-code">
 
-**Code snippet 1: Hide all of the question cards in `style.css`.**
-
 --- code ---
 ---
 language: css
@@ -33,11 +31,13 @@ line_highlights: 41-42
 }
 --- /code ---
 
+</div>
+
 --- task ---
 From the tab above the workspace, select **scripts.js** so you can update the JavaScript next.
 --- /task ---
 
-**Code snippet 2: Show the first question in `scripts.js`.**
+<div class="c-project-code">
 
 --- code ---
 ---
