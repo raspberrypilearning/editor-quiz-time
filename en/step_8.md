@@ -4,7 +4,9 @@
 Track which question is active and move to the next card after each checked answer.
 --- /task ---
 
-Line numbers are best-effort in this rewritten project.
+--- task ---
+From the file menu, select **scripts.js**.
+--- /task ---
 
 <div class="c-project-code">
 
@@ -14,7 +16,7 @@ language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 1
-line_highlights: 3,24,27,34-42
+line_highlights: 3,22,25,33-43
 ---
 // Variables
 var score = 0;
@@ -68,7 +70,7 @@ questions[0].style.opacity = 1;
 </div>
 
 <div class="c-project-output">
-<pre>After you answer a question, the current card fades out and the next question slides into view.</pre>
+  <p>After you answer a question, the current card fades out and the next question slides into view.</p>
 </div>
 
 --- task ---

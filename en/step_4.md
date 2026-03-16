@@ -1,10 +1,12 @@
 <h2 class="c-project-heading--task">Add more questions</h2>
 
 --- task ---
-Duplicate the question container so your quiz has three questions that use unique names, ids, and result boxes.
+From the tab above the workspace, select **index.html**.
 --- /task ---
 
-Line numbers are best-effort in this rewritten project.
+--- task ---
+Copy and paste the question container two times, and edit them so your quiz has three questions that use unique names, ids, and result boxes:
+--- /task ---
 
 <div class="c-project-code">
 
@@ -13,8 +15,8 @@ Line numbers are best-effort in this rewritten project.
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 34
-line_highlights: 34-48,51-64
+line_number_start: 32
+line_highlights: 32-60
 ---
       <div class="q-container">
         <h1>Question 2</h1> <!-- Update the number for the second question. -->
@@ -50,7 +52,7 @@ line_highlights: 34-48,51-64
 </div>
 
 <div class="c-project-output">
-<pre>The page now shows three separate question cards, each with its own answers, result box, and Check Answer button.</pre>
+  <p>The page now shows three separate question cards, each with its own answers, result box, and Check Answer button.</p>
 </div>
 
 --- task ---

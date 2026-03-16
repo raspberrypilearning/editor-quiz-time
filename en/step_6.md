@@ -4,7 +4,9 @@
 Update `scripts.js` so correct answers add points and answered buttons can only be used once.
 --- /task ---
 
-Line numbers are best-effort in this rewritten project.
+--- task ---
+From the tab above the workspace, select **scripts.js**.
+--- /task ---
 
 <div class="c-project-code">
 
@@ -14,7 +16,7 @@ language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 1
-line_highlights: 2,6,18-24
+line_highlights: 2, 5, 15, 18-19
 ---
 // Variables
 var score = 0; // Store the player's score.
@@ -47,7 +49,7 @@ function checkAnswer(question, result) {
 </div>
 
 <div class="c-project-output">
-<pre>After a correct answer, the score increases by one and the same Check Answer button cannot be used again.</pre>
+  <p>After a correct answer, the score increases by one and the same Check Answer button cannot be used again.</p>
 </div>
 
 --- task ---

@@ -3,11 +3,11 @@
   --font: 16px/1.25 'Raleway', sans-serif;
   
   /* Base Colours */
-  --body-background: #000000;
-  --background: #ffffff;
-  --header-font-colour: #000000;
-  --h1-colour: #000000;
-  --h2-colour: #000000;
-  --button-background-colour: #000000;
-  --button-font-colour: #ffffff;
+  --body-background: #ffff00;
+  --background: #33b5e5;
+  --header-font-colour: #ffffff;
+  --h1-colour: #001e4d;
+  --h2-colour: #001e4d;
+  --button-background-colour: #ffffff;
+  --button-font-colour: #001e4d;
 }

@@ -4,9 +4,15 @@
 Hide every question card by default, then use JavaScript to show only the first one when the page loads.
 --- /task ---
 
-Line numbers are best-effort in this rewritten project.
+--- task ---
+From the file menu, select **style.css** and **scripts.js**.
+--- /task ---
 
 Update both files for the same micro-goal: the CSS hides all question cards, and the JavaScript brings back the first one.
+
+--- task ---
+From the file menu, select **style.css**.
+--- /task ---
 
 <div class="c-project-code">
 
@@ -32,6 +38,10 @@ line_highlights: 41-42
 }
 --- /code ---
 
+--- task ---
+From the tab above the workspace, select **scripts.js** so you can update the JavaScript next.
+--- /task ---
+
 **Code snippet 2: Show the first question in `scripts.js`.**
 
 --- code ---
@@ -40,7 +50,7 @@ language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 5
-line_highlights: 7,30-31
+line_highlights: 7, 31-32
 ---
 // Constants
 const scoreText = document.querySelector("#scoreText");
@@ -75,7 +85,7 @@ questions[0].style.opacity = 1; // Make sure the first card is fully visible.
 </div>
 
 <div class="c-project-output">
-<pre>Only the first question card is visible when the page loads.</pre>
+  <p>Only the first question card is visible when the page loads.</p>
 </div>
 
 --- task ---

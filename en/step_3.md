@@ -4,7 +4,17 @@
 Create a `checkAnswer` function in `scripts.js` so the quiz can show whether an answer is correct.
 --- /task ---
 
-Line numbers are best-effort in this rewritten project.
+--- task ---
+
+From the file menu, select **scripts.js**.
+
+--- /task ---
+
+--- task ---
+
+Add the following code:
+
+--- /task ---
 
 <div class="c-project-code">
 
@@ -38,7 +48,7 @@ function checkAnswer(question, result) {
 </div>
 
 <div class="c-project-output">
-<pre>The result box appears underneath the answers and shows Correct, Incorrect, or Please select an answer.</pre>
+  <p>The result box appears underneath the answers and shows Correct, Incorrect, or Please select an answer.</p>
 </div>
 
 --- task ---

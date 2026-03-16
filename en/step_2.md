@@ -4,7 +4,9 @@
 Change the quiz title and build the first multiple-choice question in `index.html`.
 --- /task ---
 
-Line numbers are best-effort in this rewritten project.
+--- task ---
+From the file menu, select **index.html**.
+--- /task ---
 
 <div class="c-project-code">
 
@@ -44,7 +46,7 @@ line_highlights: 8,12,17,20,23,26,28-29
 </div>
 
 <div class="c-project-output">
-<pre>Your page shows the quiz title, one question card, three answer options, and a Check Answer button.</pre>
+  <p>Your page shows the quiz title, one question card, three answer options, and a Check Answer button.</p>
 </div>
 
 --- task ---

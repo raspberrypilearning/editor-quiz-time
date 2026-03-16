@@ -4,7 +4,9 @@
 Add a score display to the page header so the quiz can show the player's points.
 --- /task ---
 
-Line numbers are best-effort in this rewritten project.
+--- task ---
+From the file menu, select **index.html**.
+--- /task ---
 
 <div class="c-project-code">
 
@@ -25,7 +27,7 @@ line_highlights: 13
 </div>
 
 <div class="c-project-output">
-<pre>The header now shows Score: 0 next to your quiz title.</pre>
+  <p>The header now shows Score: 0 next to your quiz title.</p>
 </div>
 
 --- task ---

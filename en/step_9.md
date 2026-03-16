@@ -4,7 +4,9 @@
 Add a full-marks message and a retry link, then update the last question so the quiz shows a final result instead of another card.
 --- /task ---
 
-Line numbers are best-effort in this rewritten project.
+--- task ---
+From the file menu, select **index.html** and **scripts.js**.
+--- /task ---
 
 Update both files for the same micro-goal: hidden HTML elements are added first, then JavaScript reveals the correct ending.
 
@@ -38,7 +40,7 @@ language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 5
-line_highlights: 8-9,43-50
+line_highlights: 8-9,44-50
 ---
 // Constants
 const scoreText = document.querySelector("#scoreText");
@@ -94,7 +96,7 @@ function nextQ() {
 </div>
 
 <div class="c-project-output">
-<pre>The quiz ends with a glowing final score, followed by either a full-marks message or a retry link.</pre>
+  <p>The quiz ends with a glowing final score, followed by either a full-marks message or a retry link.</p>
 </div>
 
 --- task ---
