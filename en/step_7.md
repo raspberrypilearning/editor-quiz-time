@@ -5,8 +5,6 @@ Hide every question card by default, then use JavaScript to show only the first 
 
 --- /task ---
 
-
-
 --- task ---
 From the file menu, select **style.css**.
 --- /task ---
