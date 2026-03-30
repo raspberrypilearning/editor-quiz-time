@@ -6,7 +6,7 @@ Hide every question card by default, then use JavaScript to show only the first 
 --- /task ---
 
 --- task ---
-From the tab above the workspace, select **style.css**.
+From the file menu, select **style.css**.
 
 Add the following lines to hide all the question cards:
 --- /task ---
@@ -53,7 +53,7 @@ language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 4
-line_highlights: 7, 31-32
+line_highlights: 6,30-31
 ---
 // Constants
 const scoreText = document.querySelector("#scoreText");

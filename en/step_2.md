@@ -5,6 +5,12 @@ Change the quiz title and build the first multiple-choice question in `index.htm
 --- /task ---
 
 --- task ---
+**Test:** Click **Run** so you can see the starter project before you change it.
+
+You should see a placeholder quiz title and one question card with no **Check Answer** button yet.
+--- /task ---
+
+--- task ---
 From the file menu, select **index.html**.
 --- /task ---
 
@@ -52,5 +58,5 @@ line_highlights: 8,12,17,20,23,26,28-29
 --- task ---
 **Test:** Click **Run**.
 
-You should see your quiz title, one question, three answers, and a **Check Answer** button.
+You should now see your quiz title, one question, three answers, and a **Check Answer** button.
 --- /task ---

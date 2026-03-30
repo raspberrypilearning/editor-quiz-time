@@ -4,10 +4,6 @@
 Add a score display to the page header so the quiz can show the player's points.
 --- /task ---
 
---- task ---
-From the file menu, select **index.html**.
---- /task ---
-
 <div class="c-project-code">
 
 --- code ---

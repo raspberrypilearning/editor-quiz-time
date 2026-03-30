@@ -10,6 +10,7 @@ From the file menu, select **default.css**.
 
 --- task ---
 Update the colour variables to choose a new look for your quiz.
+You can copy this example or pick your own colours.
 You can use [this tool to choose colours](https://www.google.com/search?q=colour+picker){:target="_blank"}!
 
 --- /task ---
@@ -30,13 +31,13 @@ line_highlights: 6-12
   --font: 16px/1.25 'Raleway', sans-serif;
   
   /* Base Colours */
-  --body-background: #FFFF00; /* Set the page background colour. */
-  --background: #33B5E5; /* Set the colour of the header and question cards. */
+  --body-background: #F4F1DE; /* Set the page background colour. */
+  --background: #2A9D8F; /* Set the colour of the header and question cards. */
   --header-font-colour: #ffffff; /* Set the text colour used in the header and result box. */
-  --h1-colour: #001e4d; /* Set the dark highlight colour for headings and the result box background. */
-  --h2-colour: #001e4d; /* Set the question text colour. */
-  --button-background-colour: #ffffff; /* Set the button background colour. */
-  --button-font-colour: #001e4d; /* Set the button text colour. */
+  --h1-colour: #264653; /* Set the dark highlight colour for headings and the result box background. */
+  --h2-colour: #ffffff; /* Set the question text colour. */
+  --button-background-colour: #E9C46A; /* Set the button background colour. */
+  --button-font-colour: #264653; /* Set the button text colour. */
 }
 --- /code ---
 

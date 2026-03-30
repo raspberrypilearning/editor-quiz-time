@@ -10,7 +10,7 @@ From the file menu, select **scripts.js**.
 
 --- task ---
 
-Add the `NextQ` function to move to the next question when the user answers:
+Add the `nextQ` function to move to the next question when the user answers:
 
 --- /task ---
 
@@ -22,7 +22,7 @@ language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 1
-line_highlights: 3,22,25,36-47
+line_highlights: 3,22,25,37-47
 ---
 // Variables
 var score = 0;

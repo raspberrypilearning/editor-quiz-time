@@ -6,6 +6,8 @@ Copy and paste the question container two times, and edit them so your quiz has 
 
 --- task ---
 From the tab above the workspace, select **index.html**.
+
+Paste the new question containers underneath the first question container, before the closing `</main>` tag.
 --- /task ---
 
 <div class="c-project-code">
@@ -15,9 +17,10 @@ From the tab above the workspace, select **index.html**.
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 32
-line_highlights: 32-60
+line_number_start: 30
+line_highlights: 31-59
 ---
+      </div>
       <div class="q-container">
         <h1>Question 2</h1> <!-- Update the number for the second question. -->
         <h2>Which bird is known for its ability to copy human speech?</h2> <!-- Write a new question here. -->
@@ -47,6 +50,7 @@ line_highlights: 32-60
         <div class="result" id="result3"></div> <!-- Use a new result id for the third question. -->
         <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button> <!-- Pass q3 into the function. -->
       </div>
+    </main>
 --- /code ---
 
 </div>
