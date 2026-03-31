@@ -1,58 +1,50 @@
-<h2 class="c-project-heading--task">Check the answer</h2>
+<h2 class="c-project-heading--task">Choose your colours</h2>
 
---- task ---
-Create a `checkAnswer` function in `scripts.js` so the quiz can show whether an answer is correct.
---- /task ---
+### Step 1
+Change the quiz colour theme in `default.css` so the page and result box match your chosen style.
 
---- task ---
+### Step 2
+From the file menu, select **default.css**.
 
-From the file menu, select **scripts.js**.
+### Step 3
+Update the colour variables to choose a new look for your quiz.
+You can copy this example or pick your own colours.
+You can use [this tool to choose colours](https://www.google.com/search?q=colour+picker){:target="_blank"}!
 
---- /task ---
 
---- task ---
-
-Add the following code:
-
---- /task ---
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: javascript
-filename: scripts.js
+language: css
+filename: default.css
 line_numbers: true
-line_number_start: 7
-line_highlights: 8-23
+line_number_start: 1
+line_highlights: 6-12
 ---
-// Check answer function
-function checkAnswer(question, result) {
-  let answer = document.querySelector(`input[name="${question}"]:checked`); // Find the selected answer for this question.
-  let qResult = document.querySelector(result); // Find the result box for this question.
-
-  qResult.style.display = "block"; // Show the hidden result box.
-
-  if (answer) { // Only check the answer if the user selected one.
-    if (answer.value === "correct") {
-      qResult.innerText = "Correct"; // Show a success message for the right answer.
-    } else {
-      qResult.innerText = "Incorrect"; // Show a different message for a wrong answer.
-    }
-  } else {
-    qResult.innerText = "Please select an answer"; // Prompt the user if nothing was selected.
-  }
+:root {
+  /* Font variable */
+  --font: 16px/1.25 'Raleway', sans-serif;
+  
+  /* Base Colours */
+  --body-background: #F4F1DE; /* Set the page background colour. */
+  --background: #2A9D8F; /* Set the colour of the header and question cards. */
+  --header-font-colour: #ffffff; /* Set the text colour used in the header and result box. */
+  --h1-colour: #264653; /* Set the dark highlight colour for headings and the result box background. */
+  --h2-colour: #ffffff; /* Set the question text colour. */
+  --button-background-colour: #E9C46A; /* Set the button background colour. */
+  --button-font-colour: #264653; /* Set the button text colour. */
 }
 --- /code ---
 
 </div>
 
 <div class="c-project-output">
-  <p>The result box appears underneath the answers and shows Correct, Incorrect, or Please select an answer.</p>
+  <p>Your quiz changes to the colours you choose, and the result box text is easy to read.</p>
 </div>
 
---- task ---
-**Test:** Click **Run**, choose an answer, and press **Check Answer**.
+### Step 4
+**Test:** Click **Run**.
 
-The result box should appear and show **Correct**, **Incorrect**, or **Please select an answer**.
---- /task ---
+You should see the page colours update, and the text inside the result box should show clearly when you check an answer.

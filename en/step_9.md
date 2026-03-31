@@ -1,18 +1,46 @@
-<h2 class="c-project-heading--task">Show the next question</h2>
+<h2 class="c-project-heading--task">Finish the quiz</h2>
 
---- task ---
-Track which question is active and move to the next card after each checked answer.
---- /task ---
+### Step 1
+Add a full-marks message and a retry link, then update the last question so the quiz shows a final result instead of another card.
 
---- task ---
+### Step 2
+From the file menu, select **index.html**.
+
+### Step 3
+
+Add a special message if the player scores full marks:
+
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 61
+line_highlights: 65-66
+---
+        <input type="radio" name="q3" value="correct" id="q3a3">
+        <label for="q3a3">Zebra</label><br>
+
+        <div class="result" id="result3"></div>
+        <div class="fullMarks">Well done! All correct!</div> <!-- Show this message for a perfect score. -->
+        <a class="retry" href="index.html">Have another go!</a> <!-- Show this link if the player wants to retry. -->
+        <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button>
+      </div>
+--- /code ---
+
+</div>
+
+
+### Step 4
 From the file menu, select **scripts.js**.
---- /task ---
 
---- task ---
+### Step 5
 
-Add the `nextQ` function to move to the next question when the user answers:
+Show the player their final score and let the player try again:
 
---- /task ---
 
 <div class="c-project-code">
 
@@ -21,16 +49,14 @@ Add the `nextQ` function to move to the next question when the user answers:
 language: javascript
 filename: scripts.js
 line_numbers: true
-line_number_start: 1
-line_highlights: 3,22,25,37-47
+line_number_start: 5
+line_highlights: 8-9,48-54
 ---
-// Variables
-var score = 0;
-var currentQ = 0; // Keep track of the current question index.
-
 // Constants
 const scoreText = document.querySelector("#scoreText");
 const questions = document.querySelectorAll(".q-container");
+const fullMarks = document.querySelector(".fullMarks"); // Find the perfect-score message.
+const retry = document.querySelector(".retry"); // Find the retry link.
 
 // Check answer function
 function checkAnswer(question, result) {
@@ -45,10 +71,10 @@ function checkAnswer(question, result) {
       qResult.innerText = "Correct";
       score += 1;
       scoreText.innerText = `Score: ${score}`;
-      nextQ(); // Move on after a correct answer.
+      nextQ();
     } else {
       qResult.innerText = "Incorrect";
-      nextQ(); // Move on after an incorrect answer too.
+      nextQ();
     }
   } else {
     qResult.innerText = "Please select an answer";
@@ -61,13 +87,21 @@ questions[0].style.opacity = 1;
 
 // Next question function
 function nextQ() {
-  questions[currentQ].classList.add("fade-out"); // Animate the current card out.
+  questions[currentQ].classList.add("fade-out");
   setTimeout(() => {
     if (currentQ < questions.length - 1) {
-      questions[currentQ].style.display = "none"; // Hide the current card after the delay.
-      currentQ++; // Move to the next question in the list.
-      questions[currentQ].classList.add("slide-left"); // Animate the next card in.
-      questions[currentQ].style.display = "block"; // Show the next question.
+      questions[currentQ].style.display = "none";
+      currentQ++;
+      questions[currentQ].classList.add("slide-left");
+      questions[currentQ].style.display = "block";
+    } else {
+      scoreText.innerText = `Final score: ${score}/${questions.length}`; // Replace the running score with the final total.
+      scoreText.classList.add("glowing"); // Make the final score stand out.
+      if (score === questions.length) {
+        fullMarks.style.display = "block"; // Reveal the congratulations message.
+      } else {
+        retry.style.display = "block"; // Let the player try again.
+      }
     }
   }, "2000");
 }
@@ -76,11 +110,10 @@ function nextQ() {
 </div>
 
 <div class="c-project-output">
-  <p>After you answer a question, the current card fades out and the next question slides into view.</p>
+  <p>The quiz ends with a glowing final score, followed by either a full-marks message or a retry link.</p>
 </div>
 
---- task ---
-**Test:** Click **Run** and answer the first question.
+### Step 6
+**Test:** Click **Run** and finish the quiz.
 
-The current question should fade away and the next question should appear after a short delay.
---- /task ---
+You should see a glowing final score, then either a full-marks message or a retry link.

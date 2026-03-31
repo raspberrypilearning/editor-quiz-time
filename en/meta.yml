@@ -6,8 +6,8 @@ version: 4
 listed: false
 copyedit: false
 last_tested: '2021-03-26'
+landing: true
 steps:
-  - title: You will make
   - title: Create your first question
   - title: Check the answer
   - title: Choose your colours
