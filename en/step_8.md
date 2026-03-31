@@ -1,49 +1,15 @@
-<h2 class="c-project-heading--task">Show one question at a time</h2>
+<h2 class="c-project-heading--task">Show the next question</h2>
 
---- task ---
-Hide every question card by default, then use JavaScript to show only the first one when the page loads. You will need to edit both files so the CSS **hides** all question cards, and the JavaScript **brings back** the first one.
+### Step 1
+Track which question is active and move to the next card after each checked answer.
 
---- /task ---
+### Step 2
+From the file menu, select **scripts.js**.
 
---- task ---
-From the file menu, select **style.css**.
+### Step 3
 
-Add the following lines to hide all the question cards:
---- /task ---
+Add the `nextQ` function to move to the next question when the user answers:
 
-<div class="c-project-code">
-
---- code ---
----
-language: css
-filename: style.css
-line_numbers: true
-line_number_start: 34
-line_highlights: 41-42
----
-.q-container {
-  background-color: var(--background);
-  width: 90%;
-  max-width: 600px;
-  margin: 100px auto 0;
-  border-radius: 10px;
-  padding: 30px;
-  display: none; /* Hide every question until JavaScript shows one. */
-  opacity: 0; /* Start hidden so animations can fade questions in. */
-}
---- /code ---
-
-</div>
-
---- task ---
-From the tab above the workspace, select **scripts.js** so you can update the JavaScript next.
---- /task ---
-
---- task ---
-
-Add the following code to show the first card:
-
---- /task ---
 
 <div class="c-project-code">
 
@@ -52,12 +18,16 @@ Add the following code to show the first card:
 language: javascript
 filename: scripts.js
 line_numbers: true
-line_number_start: 4
-line_highlights: 6,30-31
+line_number_start: 1
+line_highlights: 3,22,25,37-47
 ---
+// Variables
+var score = 0;
+var currentQ = 0; // Keep track of the current question index.
+
 // Constants
 const scoreText = document.querySelector("#scoreText");
-const questions = document.querySelectorAll(".q-container"); // Collect all of the question cards.
+const questions = document.querySelectorAll(".q-container");
 
 // Check answer function
 function checkAnswer(question, result) {
@@ -72,8 +42,10 @@ function checkAnswer(question, result) {
       qResult.innerText = "Correct";
       score += 1;
       scoreText.innerText = `Score: ${score}`;
+      nextQ(); // Move on after a correct answer.
     } else {
       qResult.innerText = "Incorrect";
+      nextQ(); // Move on after an incorrect answer too.
     }
   } else {
     qResult.innerText = "Please select an answer";
@@ -81,18 +53,30 @@ function checkAnswer(question, result) {
 }
 
 // Display first question
-questions[0].style.display = "block"; // Show the first card as soon as the page loads.
-questions[0].style.opacity = 1; // Make sure the first card is fully visible.
+questions[0].style.display = "block";
+questions[0].style.opacity = 1;
+
+// Next question function
+function nextQ() {
+  questions[currentQ].classList.add("fade-out"); // Animate the current card out.
+  setTimeout(() => {
+    if (currentQ < questions.length - 1) {
+      questions[currentQ].style.display = "none"; // Hide the current card after the delay.
+      currentQ++; // Move to the next question in the list.
+      questions[currentQ].classList.add("slide-left"); // Animate the next card in.
+      questions[currentQ].style.display = "block"; // Show the next question.
+    }
+  }, "2000");
+}
 --- /code ---
 
 </div>
 
 <div class="c-project-output">
-  <p>Only the first question card is visible when the page loads.</p>
+  <p>After you answer a question, the current card fades out and the next question slides into view.</p>
 </div>
 
---- task ---
-**Test:** Click **Run**.
+### Step 4
+**Test:** Click **Run** and answer the first question.
 
-Only the first question should be visible when the page opens.
---- /task ---
+The current question should fade away and the next question should appear after a short delay.

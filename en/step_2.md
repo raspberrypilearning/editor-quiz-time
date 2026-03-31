@@ -1,62 +1,54 @@
-<h2 class="c-project-heading--task">Create your first question</h2>
+<h2 class="c-project-heading--task">Check the answer</h2>
 
---- task ---
-Change the quiz title and build the first multiple-choice question in `index.html`.
---- /task ---
+### Step 1
+Create a `checkAnswer` function in `scripts.js` so the quiz can show whether an answer is correct.
 
---- task ---
-**Test:** Click **Run** so you can see the starter project before you change it.
+### Step 2
 
-You should see a placeholder quiz title and one question card with no **Check Answer** button yet.
---- /task ---
+From the file menu, select **scripts.js**.
 
---- task ---
-From the file menu, select **index.html**.
---- /task ---
+
+### Step 3
+
+Add the following code:
+
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: html
-filename: index.html
+language: javascript
+filename: scripts.js
 line_numbers: true
-line_number_start: 8
-line_highlights: 8,12,17,20,23,26,28-29
+line_number_start: 7
+line_highlights: 8-23
 ---
-    <title>Wildlife quiz</title> <!-- Change this to match your quiz topic. -->
-  </head>
-  <body>
-    <header class="header">
-      <span class="sitename">Wildlife quiz</span> <!-- Show the same title in the page header. -->
-    </header>
-    <main>
-      <div class="q-container">
-        <h1>Question 1</h1>
-        <h2>What is the largest living cat species?</h2> <!-- Write your first question here. -->
+// Check answer function
+function checkAnswer(question, result) {
+  let answer = document.querySelector(`input[name="${question}"]:checked`); // Find the selected answer for this question.
+  let qResult = document.querySelector(result); // Find the result box for this question.
 
-        <input type="radio" name="q1" value="correct" id="q1a1">
-        <label for="q1a1">Tiger</label><br> <!-- Keep the correct answer marked with value="correct". -->
+  qResult.style.display = "block"; // Show the hidden result box.
 
-        <input type="radio" name="q1" value="" id="q1a2">
-        <label for="q1a2">Cheetah</label><br> <!-- Use a blank value for an incorrect answer. -->
-
-        <input type="radio" name="q1" value="" id="q1a3">
-        <label for="q1a3">Lion</label><br> <!-- Give each answer its own id. -->
-
-        <div class="result" id="result1"></div> <!-- JavaScript will show the result text here. -->
-        <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button> <!-- This button will check question 1. -->
-      </div>
+  if (answer) { // Only check the answer if the user selected one.
+    if (answer.value === "correct") {
+      qResult.innerText = "Correct"; // Show a success message for the right answer.
+    } else {
+      qResult.innerText = "Incorrect"; // Show a different message for a wrong answer.
+    }
+  } else {
+    qResult.innerText = "Please select an answer"; // Prompt the user if nothing was selected.
+  }
+}
 --- /code ---
 
 </div>
 
 <div class="c-project-output">
-  <p>Your page shows the quiz title, one question card, three answer options, and a Check Answer button.</p>
+  <p>The result box appears underneath the answers and shows Correct, Incorrect, or Please select an answer.</p>
 </div>
 
---- task ---
-**Test:** Click **Run**.
+### Step 4
+**Test:** Click **Run**, choose an answer, and press **Check Answer**.
 
-You should now see your quiz title, one question, three answers, and a **Check Answer** button.
---- /task ---
+The result box should appear and show **Correct**, **Incorrect**, or **Please select an answer**.

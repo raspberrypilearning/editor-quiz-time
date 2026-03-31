@@ -1,20 +1,58 @@
-<h2 class="c-project-heading--task">You will make</h2>
+<h2 class="c-project-heading--task">Create your first question</h2>
 
---- task ---
-Build an animated quiz app that checks answers, keeps score, and shows a final result.
---- /task ---
+### Step 1
+Change the quiz title and build the first multiple-choice question in `index.html`.
+
+### Step 2
+**Test:** Click **Run** so you can see the starter project before you change it.
+
+You should see a placeholder quiz title and one question card with no **Check Answer** button yet.
+
+### Step 3
+From the file menu, select **index.html**.
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 8
+line_highlights: 8,12,17,20,23,26,28-29
+---
+    <title>Wildlife quiz</title> <!-- Change this to match your quiz topic. -->
+  </head>
+  <body>
+    <header class="header">
+      <span class="sitename">Wildlife quiz</span> <!-- Show the same title in the page header. -->
+    </header>
+    <main>
+      <div class="q-container">
+        <h1>Question 1</h1>
+        <h2>What is the largest living cat species?</h2> <!-- Write your first question here. -->
+
+        <input type="radio" name="q1" value="correct" id="q1a1">
+        <label for="q1a1">Tiger</label><br> <!-- Keep the correct answer marked with value="correct". -->
+
+        <input type="radio" name="q1" value="" id="q1a2">
+        <label for="q1a2">Cheetah</label><br> <!-- Use a blank value for an incorrect answer. -->
+
+        <input type="radio" name="q1" value="" id="q1a3">
+        <label for="q1a3">Lion</label><br> <!-- Give each answer its own id. -->
+
+        <div class="result" id="result1"></div> <!-- JavaScript will show the result text here. -->
+        <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button> <!-- This button will check question 1. -->
+      </div>
+--- /code ---
+
+</div>
 
 <div class="c-project-output">
-  <iframe src="https://editor.raspberrypi.org/en/embed/viewer/editor-quiz-time-complete" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-  </iframe>
+  <p>Your page shows the quiz title, one question card, three answer options, and a Check Answer button.</p>
 </div>
 
-<div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
-  <strong>Tip:</strong> Try both correct and incorrect answers so you can see the score, the transitions, and the ending behaviour.
-</div>
+### Step 4
+**Test:** Click **Run**.
 
---- task ---
-**Test:** Run the completed project and answer the questions.
-
-You should see one question at a time, the score should update when you are correct, and the quiz should finish with a final result.
---- /task ---
+You should now see your quiz title, one question, three answers, and a **Check Answer** button.
