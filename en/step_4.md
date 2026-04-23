@@ -1,9 +1,9 @@
 <h2 class="c-project-heading--task">Add more questions</h2>
 
-### Step 1
 Copy and paste the question container two times, and edit them so your quiz has three questions that use unique names, ids, and result boxes.
 
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 From the tab above the workspace, select **index.html**.
 
 Paste the new question containers underneath the first question container, before the closing `</main>` tag.
@@ -57,7 +57,8 @@ line_highlights: 31-59
   <p>The page now shows three separate question cards, each with its own answers, result box, and Check Answer button.</p>
 </div>
 
-### Step 3
-**Test:** Click **Run**.
+## Now run your code
+
+Click **Run**.
 
 You should see three question cards on the page, and each card should have its own **Check Answer** button.

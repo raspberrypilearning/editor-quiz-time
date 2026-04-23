@@ -1,12 +1,14 @@
 <h2 class="c-project-heading--task">Finish the quiz</h2>
 
-### Step 1
 Add a full-marks message and a retry link, then update the last question so the quiz shows a final result instead of another card.
 
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
+
 From the file menu, select **index.html**.
 
-### Step 3
+## Step 2
 
 Add a special message if the player scores full marks:
 
@@ -33,11 +35,11 @@ line_highlights: 65-66
 
 </div>
 
+## Step 3
 
-### Step 4
 From the file menu, select **scripts.js**.
 
-### Step 5
+## Step 4
 
 Show the player their final score and let the player try again:
 
@@ -113,7 +115,8 @@ function nextQ() {
   <p>The quiz ends with a glowing final score, followed by either a full-marks message or a retry link.</p>
 </div>
 
-### Step 6
-**Test:** Click **Run** and finish the quiz.
+## Now run your code
+
+Click **Run** and finish the quiz.
 
 You should see a glowing final score, then either a full-marks message or a retry link.

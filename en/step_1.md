@@ -1,14 +1,13 @@
 <h2 class="c-project-heading--task">Create your first question</h2>
 
-### Step 1
-Change the quiz title and build the first multiple-choice question in `index.html`.
-
-### Step 2
-**Test:** Click **Run** so you can see the starter project before you change it.
+Click **Run** so you can see the starter project before you change it.
 
 You should see a placeholder quiz title and one question card with no **Check Answer** button yet.
 
-### Step 3
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
+
 From the file menu, select **index.html**.
 
 <div class="c-project-code">
@@ -52,7 +51,8 @@ line_highlights: 8,12,17,20,23,26,28-29
   <p>Your page shows the quiz title, one question card, three answer options, and a Check Answer button.</p>
 </div>
 
-### Step 4
-**Test:** Click **Run**.
+## Now run your code
+
+Click **Run**.
 
 You should now see your quiz title, one question, three answers, and a **Check Answer** button.
