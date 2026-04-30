@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Add a score</h2>
 
-### Step 1
 Add a score display to the page header so the quiz can show the player's points.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 <div class="c-project-code">
 
@@ -25,7 +26,8 @@ line_highlights: 13
   <p>The header now shows Score: 0 next to your quiz title.</p>
 </div>
 
-### Step 2
-**Test:** Click **Run**.
+## Now run your code
+
+Click **Run**.
 
 You should see **Score: 0** in the header next to your quiz title.

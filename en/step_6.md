@@ -1,9 +1,9 @@
 <h2 class="c-project-heading--task">Keep score</h2>
 
-### Step 1
 Update `scripts.js` so correct answers add points and answered buttons can only be used once.
 
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 From the tab above the workspace, select **scripts.js**.
 
 <div class="c-project-code">
@@ -50,7 +50,8 @@ function checkAnswer(question, result) {
   <p>After a correct answer, the score increases by one and the same Check Answer button cannot be used again.</p>
 </div>
 
-### Step 3
-**Test:** Click **Run**, answer a question correctly, and press **Check Answer**.
+## Now run your code
+
+Click **Run**, answer a question correctly, and press **Check Answer**.
 
 Your score should increase by one, and clicking the same button again should not add more points.

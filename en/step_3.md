@@ -1,12 +1,15 @@
 <h2 class="c-project-heading--task">Choose your colours</h2>
 
-### Step 1
 Change the quiz colour theme in `default.css` so the page and result box match your chosen style.
 
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
+
 From the file menu, select **default.css**.
 
-### Step 3
+## Step 2
+
 Update the colour variables to choose a new look for your quiz.
 You can copy this example or pick your own colours.
 You can use [this tool to choose colours](https://www.google.com/search?q=colour+picker){:target="_blank"}!
@@ -44,7 +47,8 @@ line_highlights: 6-12
   <p>Your quiz changes to the colours you choose, and the result box text is easy to read.</p>
 </div>
 
-### Step 4
-**Test:** Click **Run**.
+## Now run your code
+
+Click **Run**.
 
 You should see the page colours update, and the text inside the result box should show clearly when you check an answer.
