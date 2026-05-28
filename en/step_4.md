@@ -2,8 +2,6 @@
 
 Copy and paste the question container two times, and edit them so your quiz has three questions that use unique names, ids, and result boxes.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 From the tab above the workspace, select **index.html**.
 
 Paste the new question containers underneath the first question container, before the closing `</main>` tag.
