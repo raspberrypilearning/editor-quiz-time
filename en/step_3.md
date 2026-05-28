@@ -2,8 +2,6 @@
 
 Change the quiz colour theme in `default.css` so the page and result box match your chosen style.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
 From the file menu, select **default.css**.
