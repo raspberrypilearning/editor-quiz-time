@@ -4,8 +4,6 @@ Click **Run** so you can see the starter project before you change it.
 
 You should see a placeholder quiz title and one question card with no **Check Answer** button yet.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
 From the file menu, select **index.html**.
