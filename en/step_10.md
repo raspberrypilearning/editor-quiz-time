@@ -2,8 +2,6 @@
 
 Extend the quiz with your own idea, such as more questions, different animations, or a new ending message.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 From the file menu, select the file you want to change, such as **index.html**, **scripts.js**, or **style.css**.
 
 Ideas to try:
