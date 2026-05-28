@@ -2,8 +2,6 @@
 
 Update `scripts.js` so correct answers add points and answered buttons can only be used once.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 From the tab above the workspace, select **scripts.js**.
 
 <div class="c-project-code">
