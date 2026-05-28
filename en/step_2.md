@@ -2,8 +2,6 @@
 
 Create a `checkAnswer` function in `scripts.js` so the quiz can show whether an answer is correct.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
 From the file menu, select **scripts.js**.
