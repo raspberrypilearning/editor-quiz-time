@@ -2,8 +2,6 @@
 
 Add a full-marks message and a retry link, then update the last question so the quiz shows a final result instead of another card.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
 From the file menu, select **index.html**.
