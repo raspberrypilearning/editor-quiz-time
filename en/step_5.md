@@ -2,8 +2,6 @@
 
 Add a score display to the page header so the quiz can show the player's points.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 <div class="c-project-code">
 
 --- code ---
