@@ -2,8 +2,6 @@
 
 Track which question is active and move to the next card after each checked answer.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
 From the file menu, select **scripts.js**.
