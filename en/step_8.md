@@ -1,10 +1,10 @@
 <h2 class="c-project-heading--task">Show the next question</h2>
 
-Track which question is active and move to the next card after each checked answer.
+Track which question is active and move to the next card after each answer is checked.
 
 ## Step 1
 
-From the file menu, select **scripts.js**.
+From the tabs above the workspace, select `scripts.js`.
 
 ## Step 2
 
@@ -73,11 +73,11 @@ function nextQ() {
 </div>
 
 <div class="c-project-output">
-  <p>After you answer a question, the current card fades out and the next question slides into view.</p>
+  <p>After you answer a question, the current card should fade out and the next question should slide into view.</p>
 </div>
 
 ## Now run your code
 
-Click **Run** and answer the first question.
+Click on **Run** and answer the first question.
 
-The current question should fade away and the next question should appear after a short delay.
+The current question should then fade away, and the next question should appear after a short delay.
