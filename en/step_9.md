@@ -1,14 +1,14 @@
 <h2 class="c-project-heading--task">Finish the quiz</h2>
 
-Add a full-marks message and a retry link, then update the last question so the quiz shows a final result instead of another card.
+Add a 'full marks' message and a 'retry' link, then update the last question so that the quiz shows a final result instead of another card.
 
 ## Step 1
 
-From the file menu, select **index.html**.
+From the tabs above the workspace, select `index.html`.
 
 ## Step 2
 
-Add a special message if the player scores full marks:
+Add a special message for if the player scores full marks, and a link for if the player wants to try again:
 
 
 <div class="c-project-code">
@@ -18,8 +18,8 @@ Add a special message if the player scores full marks:
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 61
-line_highlights: 65-66
+line_number_start: 55
+line_highlights: 59-60
 ---
         <input type="radio" name="q3" value="correct" id="q3a3">
         <label for="q3a3">Zebra</label><br>
@@ -35,7 +35,7 @@ line_highlights: 65-66
 
 ## Step 3
 
-From the file menu, select **scripts.js**.
+From the tabs above the workspace, select `scripts.js`.
 
 ## Step 4
 
@@ -55,7 +55,7 @@ line_highlights: 8-9,48-54
 // Constants
 const scoreText = document.querySelector("#scoreText");
 const questions = document.querySelectorAll(".q-container");
-const fullMarks = document.querySelector(".fullMarks"); // Find the perfect-score message.
+const fullMarks = document.querySelector(".fullMarks"); // Find the perfect score message.
 const retry = document.querySelector(".retry"); // Find the retry link.
 
 // Check answer function
@@ -109,12 +109,8 @@ function nextQ() {
 
 </div>
 
-<div class="c-project-output">
-  <p>The quiz ends with a glowing final score, followed by either a full-marks message or a retry link.</p>
-</div>
-
 ## Now run your code
 
-Click **Run** and finish the quiz.
+Click on **Run** and finish the quiz.
 
-You should see a glowing final score, then either a full-marks message or a retry link.
+You should see a glowing final score, then either a 'full marks' message or a 'retry' link.

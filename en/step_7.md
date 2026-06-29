@@ -4,11 +4,11 @@ Hide every question card by default, then use JavaScript to show only the first 
 
 ## Step 1
 
-You will need to edit both files so the CSS **hides** all question cards, and the JavaScript **brings back** the first one.
+You will need to edit both the `style.css` and the `scripts.js` files so that the CSS **hides** all the question cards, and the JavaScript **brings back** the first one.
 
 ## Step 2
 
-From the file menu, select **style.css**.
+From the **Project files** menu, select `style.css`.
 
 Add the following lines to hide all the question cards:
 
@@ -38,7 +38,7 @@ line_highlights: 41-42
 
 ## Step 3
 
-From the tab above the workspace, select **scripts.js** so you can update the JavaScript next.
+From the tabs above the workspace, select `scripts.js` so that you can update the JavaScript next.
 
 ## Step 4
 
@@ -87,12 +87,8 @@ questions[0].style.opacity = 1; // Make sure the first card is fully visible.
 
 </div>
 
-<div class="c-project-output">
-  <p>Only the first question card is visible when the page loads.</p>
-</div>
-
 ## Now run your code
 
-Click **Run**.
+Click on **Run**.
 
-Only the first question should be visible when the page opens.
+Check that only the first question shows when the page opens.

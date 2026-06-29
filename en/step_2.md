@@ -1,10 +1,10 @@
 <h2 class="c-project-heading--task">Check the answer</h2>
 
-Create a `checkAnswer` function in `scripts.js` so the quiz can show whether an answer is correct.
+Create a `checkAnswer` function in `scripts.js` so that the quiz can show whether an answer is correct.
 
 ## Step 1
 
-From the file menu, select **scripts.js**.
+From the **Project files** menu, select `scripts.js`.
 
 ## Step 2
 
@@ -42,12 +42,10 @@ function checkAnswer(question, result) {
 
 </div>
 
-<div class="c-project-output">
-  <p>The result box appears underneath the answers and shows Correct, Incorrect, or Please select an answer.</p>
-</div>
+
 
 ## Now run your code
 
-Click **Run**, choose an answer, and press **Check Answer**.
+Click on **Run**, choose an answer, and press **Check Answer**.
 
-The result box should appear and show **Correct**, **Incorrect**, or **Please select an answer**.
+The result box should appear and show **"Correct"**, **"Incorrect"**, or **"Please select an answer"**.
