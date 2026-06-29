@@ -51,10 +51,6 @@ line_highlights: 31-59
 
 </div>
 
-<div class="c-project-output">
-  <p>The page should now show three separate question cards, each with its own answers, result box, and **Check Answer** button.</p>
-</div>
-
 ## Now run your code
 
 Click on **Run**.

@@ -42,9 +42,7 @@ function checkAnswer(question, result) {
 
 </div>
 
-<div class="c-project-output">
-  <p>The result box should appear underneath the answers and show "Correct", "Incorrect", or "Please select an answer".</p>
-</div>
+
 
 ## Now run your code
 

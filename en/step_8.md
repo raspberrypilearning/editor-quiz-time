@@ -72,10 +72,6 @@ function nextQ() {
 
 </div>
 
-<div class="c-project-output">
-  <p>After you answer a question, the current card should fade out and the next question should slide into view.</p>
-</div>
-
 ## Now run your code
 
 Click on **Run** and answer the first question.

@@ -87,10 +87,6 @@ questions[0].style.opacity = 1; // Make sure the first card is fully visible.
 
 </div>
 
-<div class="c-project-output">
-  <p>Only the first question card should be visible when the page loads.</p>
-</div>
-
 ## Now run your code
 
 Click on **Run**.

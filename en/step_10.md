@@ -10,10 +10,6 @@ Here are some ideas to try:
 - Swap `slide-left` for a different animation class from `style.css`
 - Change the 'full marks' and 'retry' messages so they match your quiz topic
 
-<div class="c-project-output">
-  <p>Your finished project should include at least one extra feature that changes how the quiz looks or behaves.</p>
-</div>
-
 ## Now run your code
 
 Run your project and try your new feature.

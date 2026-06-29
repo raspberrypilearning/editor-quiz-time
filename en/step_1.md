@@ -45,10 +45,6 @@ line_highlights: 8,12,17,20,23,26,28-29
 
 </div>
 
-<div class="c-project-output">
-  <p>Your page should show the quiz title, one question card with three answer options, and a **Check Answer** button.</p>
-</div>
-
 ## Now run your code
 
 Click on **Run**.

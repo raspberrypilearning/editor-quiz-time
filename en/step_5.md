@@ -20,10 +20,6 @@ line_highlights: 13
 
 </div>
 
-<div class="c-project-output">
-  <p>The header should now show "Score: 0" next to your quiz title.</p>
-</div>
-
 ## Now run your code
 
 Click on **Run**.

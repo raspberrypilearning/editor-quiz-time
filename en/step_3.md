@@ -41,10 +41,6 @@ line_highlights: 6-12
 
 </div>
 
-<div class="c-project-output">
-  <p>Your quiz should change to the colours you chose, and the text in the result box should be easy to read.</p>
-</div>
-
 ## Now run your code
 
 Click on **Run**.

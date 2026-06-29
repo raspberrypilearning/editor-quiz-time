@@ -44,10 +44,6 @@ function checkAnswer(question, result) {
 
 </div>
 
-<div class="c-project-output">
-  <p>After a correct answer, the score should increase by 1 and you should not be able to use the same **Check Answer** button again.</p>
-</div>
-
 ## Now run your code
 
 Click on **Run**, answer a question correctly, and press **Check Answer**.

@@ -109,10 +109,6 @@ function nextQ() {
 
 </div>
 
-<div class="c-project-output">
-  <p>The quiz should end with a glowing final score, followed by either a 'full marks' message or a 'retry' link.</p>
-</div>
-
 ## Now run your code
 
 Click on **Run** and finish the quiz.
