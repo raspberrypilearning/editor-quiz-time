@@ -1,29 +1,14 @@
-<h2 class="c-project-heading--task">Choose your colours</h2>
+## Choose your colours
 
 Change the quiz colour theme in `default.css` so that the page and result box match your chosen style.
 
-## Step 1
-
 From the **Project files** menu, select `default.css`.
-
-## Step 2
 
 Update the colour variables to choose a new look for your quiz.
 
 You can copy this example or pick your own colours. You can use [this tool to choose colours](https://www.google.com/search?q=colour+picker){:target="_blank"}.
 
-
-
-<div class="c-project-code">
-
---- code ---
----
-language: css
-filename: default.css
-line_numbers: true
-line_number_start: 1
-line_highlights: 6-12
----
+```css filename="default.css" line_numbers="true" line_number_start="1" line_highlights="6-12"
 :root {
   /* Font variable */
   --font: 16px/1.25 'Raleway', sans-serif;
@@ -37,9 +22,7 @@ line_highlights: 6-12
   --button-background-colour: #E9C46A; /* Set the button background colour. */
   --button-font-colour: #264653; /* Set the button text colour. */
 }
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 

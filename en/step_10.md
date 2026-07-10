@@ -1,14 +1,16 @@
-<h2 class="c-project-heading--task">Challenge</h2>
+## Challenge
 
 Extend the quiz with your own idea, such as more questions, different animations, or a new ending message.
 
 From the **Project files** menu, select the file you want to change, such as `index.html`, `scripts.js`, or `style.css`.
 
-Here are some ideas to try:
-
-- Add another question card with a new set of answers
-- Swap `slide-left` for a different animation class from `style.css`
-- Change the 'full marks' and 'retry' messages so they match your quiz topic
+> [!CHALLENGE]
+>
+> Here are some ideas to try:
+>
+> - Add another question card with a new set of answers
+> - Swap `slide-left` for a different animation class from `style.css`
+> - Change the 'full marks' and 'retry' messages so they match your quiz topic
 
 ## Now run your code
 

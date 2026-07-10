@@ -1,23 +1,12 @@
-<h2 class="c-project-heading--task">Create your first question</h2>
+## Create your first question
 
 Click on **Run** so that you can see the starter project before you change it.
 
 You should see a placeholder quiz title and one question card, and no **Check Answer** button yet.
 
-## Step 1
-
 From the **Project files** menu, select `index.html`.
 
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: index.html
-line_numbers: true
-line_number_start: 8
-line_highlights: 8,12,17,20,23,26,28-29
----
+```html filename="index.html" line_numbers="true" line_number_start="8" line_highlights="8,12,17,20,23,26,28-29"
     <title>Wildlife quiz</title> <!-- Change this to match your quiz topic. -->
   </head>
   <body>
@@ -41,9 +30,7 @@ line_highlights: 8,12,17,20,23,26,28-29
         <div class="result" id="result1"></div> <!-- JavaScript will show the result text here. -->
         <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button> <!-- This button will check question 1. -->
       </div>
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 
