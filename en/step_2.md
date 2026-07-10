@@ -1,26 +1,12 @@
-<h2 class="c-project-heading--task">Check the answer</h2>
+## Check the answer
 
 Create a `checkAnswer` function in `scripts.js` so that the quiz can show whether an answer is correct.
 
-## Step 1
-
 From the **Project files** menu, select `scripts.js`.
-
-## Step 2
 
 Add the following code:
 
-
-<div class="c-project-code">
-
---- code ---
----
-language: javascript
-filename: scripts.js
-line_numbers: true
-line_number_start: 7
-line_highlights: 8-23
----
+```javascript filename="scripts.js" line_numbers="true" line_number_start="7" line_highlights="8-23"
 // Check answer function
 function checkAnswer(question, result) {
   let answer = document.querySelector(`input[name="${question}"]:checked`); // Find the selected answer for this question.
@@ -38,11 +24,7 @@ function checkAnswer(question, result) {
     qResult.innerText = "Please select an answer"; // Prompt the user if nothing was selected.
   }
 }
---- /code ---
-
-</div>
-
-
+```
 
 ## Now run your code
 

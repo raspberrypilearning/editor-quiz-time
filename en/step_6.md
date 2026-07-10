@@ -1,19 +1,10 @@
-<h2 class="c-project-heading--task">Keep score</h2>
+## Keep score
 
 Update `scripts.js` so that correct answers add points and **Check Answer** buttons can only be used once.
 
 From the tabs above the workspace, select `scripts.js`.
 
-<div class="c-project-code">
-
---- code ---
----
-language: javascript
-filename: scripts.js
-line_numbers: true
-line_number_start: 1
-line_highlights: 2, 5, 15, 18-19
----
+```javascript filename="scripts.js" line_numbers="true" line_number_start="1" line_highlights="2,5,15,18-19"
 // Variables
 var score = 0; // Store the player's score.
 
@@ -40,9 +31,7 @@ function checkAnswer(question, result) {
     qResult.innerText = "Please select an answer";
   }
 }
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 

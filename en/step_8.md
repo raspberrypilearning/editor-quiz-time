@@ -1,26 +1,12 @@
-<h2 class="c-project-heading--task">Show the next question</h2>
+## Show the next question
 
 Track which question is active and move to the next card after each answer is checked.
 
-## Step 1
-
 From the tabs above the workspace, select `scripts.js`.
-
-## Step 2
 
 Add the `nextQ` function to move to the next question when the user answers:
 
-
-<div class="c-project-code">
-
---- code ---
----
-language: javascript
-filename: scripts.js
-line_numbers: true
-line_number_start: 1
-line_highlights: 3,22,25,37-47
----
+```javascript filename="scripts.js" line_numbers="true" line_number_start="1" line_highlights="3,22,25,37-47"
 // Variables
 var score = 0;
 var currentQ = 0; // Keep track of the current question index.
@@ -68,9 +54,7 @@ function nextQ() {
     }
   }, "2000");
 }
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 

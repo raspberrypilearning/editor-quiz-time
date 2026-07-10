@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">Finish the quiz</h2>
+## Finish the quiz
 
 Add a 'full marks' message and a 'retry' link, then update the last question so that the quiz shows a final result instead of another card.
 
@@ -6,21 +6,9 @@ Add a 'full marks' message and a 'retry' link, then update the last question so 
 
 From the tabs above the workspace, select `index.html`.
 
-## Step 2
-
 Add a special message for if the player scores full marks, and a link for if the player wants to try again:
 
-
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: index.html
-line_numbers: true
-line_number_start: 55
-line_highlights: 59-60
----
+```html filename="index.html" line_numbers="true" line_number_start="55" line_highlights="59-60"
         <input type="radio" name="q3" value="correct" id="q3a3">
         <label for="q3a3">Zebra</label><br>
 
@@ -29,29 +17,15 @@ line_highlights: 59-60
         <a class="retry" href="index.html">Have another go!</a> <!-- Show this link if the player wants to retry. -->
         <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button>
       </div>
---- /code ---
+```
 
-</div>
-
-## Step 3
+## Step 2
 
 From the tabs above the workspace, select `scripts.js`.
 
-## Step 4
-
 Show the player their final score and let the player try again:
 
-
-<div class="c-project-code">
-
---- code ---
----
-language: javascript
-filename: scripts.js
-line_numbers: true
-line_number_start: 5
-line_highlights: 8-9,48-54
----
+```javascript filename="scripts.js" line_numbers="true" line_number_start="5" line_highlights="8-9,48-54"
 // Constants
 const scoreText = document.querySelector("#scoreText");
 const questions = document.querySelectorAll(".q-container");
@@ -105,9 +79,7 @@ function nextQ() {
     }
   }, "2000");
 }
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 
